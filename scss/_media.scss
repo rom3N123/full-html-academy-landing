@@ -60,17 +60,31 @@
 }
 
 @media (max-width:1150px) {
+	body.lock {
+		overflow: hidden;
+	}
+
 	.header {
+		z-index: 20;
+
+		&__logo {
+			z-index: 20;
+		}
+
 		&__burger {
 			display: block;
 			order: 1;
+			z-index: 20;
 		}
 
 		.menu {
-			color: #fff;
-			background-color: $soft;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			color: $darker;
+			background-color: #E5E5E5;
 			position: fixed;
-			top: -400px;
+			top: -100%;
 			left: 0;
 			right: 0;
 			text-align: center;
@@ -78,7 +92,9 @@
 			transition: all .1s linear;
 
 			&__list {
-				margin: 15px 0;
+				margin: 30px 0;
+				padding-bottom: 10px;
+				border-bottom: 1px solid $darker;
 			}
 
 			&__link {
@@ -107,8 +123,9 @@
 		}
 
 		.menu.active {
+			padding-top: 100px;
 			display: block;
-			top: 100px;
+			top: 0;
 		}
 	}
 

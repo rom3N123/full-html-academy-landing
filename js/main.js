@@ -11,6 +11,7 @@ $(function () {
 
 	$('.header__burger').on('click', (event) => {
 		$('.header__burger,.menu').toggleClass('active');
+		$('body').toggleClass('lock');
 	});
 
 
