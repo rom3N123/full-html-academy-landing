@@ -448,8 +448,17 @@
 
 
 .footer {
+	background-color: #E5E5E5;
+	font-size: 18px;
+	line-height: 30px;
+	color: #533738;
 
-	&__inner {}
+	&__inner {
+		padding: 35px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
 	&__item {}
 
