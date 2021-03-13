@@ -69,6 +69,21 @@
 	display: flex;
 	z-index: 100;
 
+	&__link {
+		padding-bottom: 5px;
+		border-bottom: 1px solid transparent;
+		transition: border-bottom .3s ease-out;
+
+		&:hover {
+			border-bottom: 1px solid $darker;
+		}
+
+		&:active {
+			color: #CC8B86;
+			border-color: #CC8B86;
+		}
+	}
+
 	&__list {
 		&:not(:last-child) {
 			margin-right: 25px;

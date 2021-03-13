@@ -514,6 +514,25 @@ p {
   margin: 0;
 }
 
+.btn {
+  -webkit-transition: background-color .2s linear, -webkit-box-shadow .2s linear, -webkit-transform .1s ease;
+  transition: background-color .2s linear, -webkit-box-shadow .2s linear, -webkit-transform .1s ease;
+  transition: background-color .2s linear, box-shadow .2s linear, transform .1s ease;
+  transition: background-color .2s linear, box-shadow .2s linear, transform .1s ease, -webkit-box-shadow .2s linear, -webkit-transform .1s ease;
+}
+
+.btn:hover {
+  background-color: #E2C4BA;
+  color: #000;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.btn:active {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
 .wrapper {
   background-image: url(../images/main-bg.jpg);
   background-size: cover;
@@ -580,6 +599,22 @@ p {
   display: -ms-flexbox;
   display: flex;
   z-index: 100;
+}
+
+.menu__link {
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom .3s ease-out;
+  transition: border-bottom .3s ease-out;
+}
+
+.menu__link:hover {
+  border-bottom: 1px solid #533738;
+}
+
+.menu__link:active {
+  color: #CC8B86;
+  border-color: #CC8B86;
 }
 
 .menu__list:not(:last-child) {
