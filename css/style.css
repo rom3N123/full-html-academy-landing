@@ -1195,6 +1195,9 @@ p {
 }
 
 @media (max-width: 968px) {
+  *:hover {
+    pointer-events: none;
+  }
   .about__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
