@@ -51,10 +51,22 @@
 
 @media (max-width:1227px) {
 	.works {
+		&__title {
+			text-align: center;
+		}
+
 		&__inner {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+		}
+
+		&__item {
+			margin: 15px 0;
+
+			&:first-child {
+				padding: 0;
+			}
 		}
 	}
 }
@@ -260,8 +272,6 @@
 
 @media (max-width:650px) {
 	.awards {
-
-
 		&__inner {
 			flex-direction: column;
 			justify-content: center;
